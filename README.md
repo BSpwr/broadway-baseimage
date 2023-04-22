@@ -1,4 +1,4 @@
-![](https://github.com/m-bers/broadway-baseimage/workflows/docker%20build/badge.svg)
+![](https://github.com/bspwr/broadway-baseimage/workflows/docker%20build/badge.svg)
 # Broadway docker baseimage
 
 This is my fork of [m-bers/broadway-baseimage](https://github.com/m-bers/broadway-baseimage).
@@ -15,7 +15,7 @@ git, docker
 
 ### Quickstart: 
 
-    docker run -it -p 8180:80 bspwr/broadway-baseimage /bin/bash
+    docker run -it -p 8180:80 ghcr.io/bspwr/broadway-baseimage /bin/bash
 
 In the container shell, 
 
@@ -44,9 +44,9 @@ In your Dockerfile you generally want to do the following:
 * Copy your entrypoint script into the container
 * Run your entrypoint script
 
-Example (from [docker-virt-manager](https://github.com/m-bers/docker-virt-manager)):
+Example (from [docker-virt-manager](https://github.com/bspwr/docker-virt-manager)):
 
-    FROM bspwr/broadway-baseimage:latest
+    FROM ghcr.io/bspwr/broadway-baseimage:latest
 
     ENV FAVICON_URL='https://raw.githubusercontent.com/virt-manager/virt-manager/931936a328d22413bb663e0e21d2f7bb111dbd7c/data/icons/256x256/apps/virt-manager.png'
     ENV APP_TITLE='Virtual Machine Manager'

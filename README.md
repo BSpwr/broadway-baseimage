@@ -1,5 +1,7 @@
 ![](https://github.com/m-bers/broadway-baseimage/workflows/docker%20build/badge.svg)
 # Broadway docker baseimage
+
+This is my fork of [m-bers/broadway-baseimage](https://github.com/m-bers/broadway-baseimage).
 ## Run GTK3 apps in the browser via docker
 
 ### What is it? 
@@ -13,7 +15,7 @@ git, docker
 
 ### Quickstart: 
 
-    docker run -it -p 8180:80 mber5/broadway-baseimage /bin/bash
+    docker run -it -p 8180:80 bspwr/broadway-baseimage /bin/bash
 
 In the container shell, 
 
@@ -44,7 +46,7 @@ In your Dockerfile you generally want to do the following:
 
 Example (from [docker-virt-manager](https://github.com/m-bers/docker-virt-manager)):
 
-    FROM mber5/broadway-baseimage:latest
+    FROM bspwr/broadway-baseimage:latest
 
     ENV FAVICON_URL='https://raw.githubusercontent.com/virt-manager/virt-manager/931936a328d22413bb663e0e21d2f7bb111dbd7c/data/icons/256x256/apps/virt-manager.png'
     ENV APP_TITLE='Virtual Machine Manager'

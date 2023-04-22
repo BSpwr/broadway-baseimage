@@ -33,4 +33,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: mber5/broadway-baseimage:latest
+          tags: bspwr/broadway-baseimage:latest
